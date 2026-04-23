@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DevScope — GitHub Profile Visualizer</title>
+<title>GitDNA — GitHub Profile Visualizer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -158,7 +158,7 @@ nav{display:flex;align-items:center;justify-content:space-between}
 .devcard-wrap{display:flex;justify-content:center;align-items:flex-start;gap:var(--space-8);flex-wrap:wrap;margin-top:var(--space-4)}
 .devcard{width:320px;flex-shrink:0;background:linear-gradient(145deg,var(--color-surface),var(--color-surface-offset));border:1px solid var(--color-border);border-radius:var(--radius-2xl);padding:var(--space-6);box-shadow:var(--shadow-lg),0 0 60px var(--color-primary-glow);position:relative;overflow:hidden}
 .devcard::before{content:"";position:absolute;top:0;left:0;right:0;height:90px;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));opacity:.15}
-.devcard::after{content:"🔭";position:absolute;top:var(--space-4);right:var(--space-4);font-size:1.4rem;opacity:.5}
+.devcard::after{content:"🧬";position:absolute;top:var(--space-4);right:var(--space-4);font-size:1.4rem;opacity:.5}
 .devcard-header{display:flex;align-items:center;gap:var(--space-4);margin-bottom:var(--space-5);position:relative}
 .devcard-avatar{width:64px;height:64px;border-radius:50%;border:3px solid var(--color-primary);box-shadow:0 0 0 4px var(--color-primary-glow)}
 .devcard-name{font-size:var(--text-lg);font-weight:800;letter-spacing:-.02em;line-height:1.2}
@@ -246,7 +246,7 @@ footer{margin-top:var(--space-20);padding:var(--space-8) 0 var(--space-10);borde
           <path d="M16 4 L16 8 M16 24 L16 28 M4 16 L8 16 M24 16 L28 16" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
           <defs><linearGradient id="lg1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7c6bff"/><stop offset="1" stop-color="#00d4aa"/></linearGradient></defs>
         </svg>
-        <span class="logo-text">Dev<span>Scope</span></span>
+        <span class="logo-text">Git<span>DNA</span></span>
       </div>
       <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -307,7 +307,7 @@ footer{margin-top:var(--space-20);padding:var(--space-8) 0 var(--space-10);borde
     <div class="reveal" style="margin-top:var(--space-6)">
       <div class="chart-card" style="padding:var(--space-5) var(--space-6)">
         <div class="chart-title" style="margin-bottom:var(--space-1)">🔗 Shareable Profile Link</div>
-        <div style="font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-2)">Share this developer's DevScope report with anyone</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-muted);margin-bottom:var(--space-2)">Share this developer's GitDNA report with anyone</div>
         <div class="share-url-box"><span class="share-url-text" id="shareUrlText">—</span><button class="copy-btn" id="copyBtn" onclick="copyShareUrl()">📋 Copy</button></div>
       </div>
     </div>
@@ -322,7 +322,7 @@ footer{margin-top:var(--space-20);padding:var(--space-8) 0 var(--space-10);borde
           <div class="devcard-dna"><span class="devcard-dna-label">🧬 DNA Score</span><span class="devcard-dna-score" id="cardDnaScore"></span></div>
           <div class="devcard-stats" id="cardStats"></div>
           <div class="devcard-lang" id="cardLangs"></div>
-          <div class="devcard-footer"><span class="devcard-brand">🔭 DEVSCOPE</span><button class="devcard-download" onclick="downloadCard()">⬇️ Download Card</button></div>
+          <div class="devcard-footer"><span class="devcard-brand">🧬 GITDNA</span><button class="devcard-download" onclick="downloadCard()">⬇️ Download Card</button></div>
         </div>
         <div class="devcard-instructions"><h3>📢 Share Your Card</h3><div class="devcard-share-btns" id="shareBtns"></div></div>
       </div>
@@ -333,7 +333,7 @@ footer{margin-top:var(--space-20);padding:var(--space-8) 0 var(--space-10);borde
     </div>
     <div class="reveal" style="margin-top:var(--space-6)">
       <div class="section-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3)">
-        <div><div class="section-title">🌍 DevScope Leaderboard</div><div class="section-sub">Developers you've searched — ranked by DNA Score</div></div>
+        <div><div class="section-title">🌍 GitDNA Leaderboard</div><div class="section-sub">Developers you've searched — ranked by DNA Score</div></div>
         <button class="lb-clear-btn" onclick="clearLeaderboard()">🗑️ Clear</button>
       </div>
       <div class="lb-table">
@@ -360,14 +360,14 @@ footer{margin-top:var(--space-20);padding:var(--space-8) 0 var(--space-10);borde
     <div class="footer-inner">
       <div class="footer-brand">
         <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#flg)"/><circle cx="16" cy="16" r="8" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/><circle cx="16" cy="16" r="4" fill="white" opacity="0.9"/><path d="M16 4 L16 8 M16 24 L16 28 M4 16 L8 16 M24 16 L28 16" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><defs><linearGradient id="flg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#7c6bff"/><stop offset="1" stop-color="#00d4aa"/></linearGradient></defs></svg>
-        &nbsp;DevScope &nbsp;—&nbsp; Built with &nbsp;<span class="heart">❤️</span>&nbsp; by <strong>Mohammed Aslam</strong>
+        &nbsp;GitDNA &nbsp;—&nbsp; Built with &nbsp;<span class="heart">❤️</span>&nbsp; by <strong>Mohammed Aslam</strong>
       </div>
       <div class="footer-links">
         <a href="https://github.com/aslam-prog" target="_blank" rel="noopener">👤 aslam-prog</a>
         <span class="footer-sep"> | </span>
-        <a href="mailto:uniqueehubs@gmail.com">✉️ uniqueehubs@gmail.com</a>
+        <a href="mailto:mdaslam31@gmail.com">✉️ mdaslam31@gmail.com</a>
         <span class="footer-sep"> | </span>
-        <a href="https://github.com/aslam-prog/devscope" target="_blank" rel="noopener">⭐ Open Source on GitHub</a>
+        <a href="https://github.com/aslam-prog/gitdna" target="_blank" rel="noopener">⭐ Open Source on GitHub</a>
         <span class="footer-sep"> | </span>
         <a href="https://docs.github.com/en/rest" target="_blank" rel="noopener">🔌 GitHub REST API</a>
       </div>
@@ -387,198 +387,147 @@ const RANKS=[
   {min:91,max:100,label:"🏆 Legend Developer",cls:"rank-legend"},
 ];
 function getRank(score){return RANKS.find(r=>score>=r.min&&score<=r.max)||RANKS[0];}
-function rankBadgeHTML(score){const r=getRank(score);return '<span class="rank-badge '+r.cls+'">'+r.label+'</span>';}
+function rankBadgeHTML(score){const r=getRank(score);return `<span class="rank-badge ${r.cls}">${r.label}</span>`;}
 
 // ===== LEADERBOARD =====
-var leaderboard=[];
+let leaderboard=[];
 function addToLeaderboard(user,repos,dnaScore){
-  var existing=leaderboard.findIndex(function(e){return e.login===user.login;});
-  var entry={login:user.login,name:user.name||user.login,avatar:user.avatar_url,stars:repos.reduce(function(s,r){return s+r.stargazers_count;},0),repos:user.public_repos,score:dnaScore};
+  const existing=leaderboard.findIndex(e=>e.login===user.login);
+  const entry={login:user.login,name:user.name||user.login,avatar:user.avatar_url,stars:repos.reduce((s,r)=>s+r.stargazers_count,0),repos:user.public_repos,score:dnaScore};
   if(existing>=0)leaderboard[existing]=entry;else leaderboard.push(entry);
-  leaderboard.sort(function(a,b){return b.score-a.score;});
+  leaderboard.sort((a,b)=>b.score-a.score);
   renderLeaderboard();
 }
 function renderLeaderboard(){
-  var body=document.getElementById("lbBody");
+  const body=document.getElementById("lbBody");
   if(!body)return;
   if(!leaderboard.length){body.innerHTML='<div class="lb-empty"><span>🌍</span>Search developers to add them to your leaderboard!</div>';return;}
-  var medals=["🥇","🥈","🥉"];
-  var html="";
-  for(var i=0;i<leaderboard.length;i++){
-    var e=leaderboard[i];
-    var topCls=i<3?"top-"+(i+1):"";
-    var medal=i<3?medals[i]:(i+1);
-    html+='<div class="lb-row '+topCls+'" data-login="'+e.login+'">';
-    html+='<div class="lb-rank">'+medal+'</div>';
-    html+='<div class="lb-user"><img class="lb-avatar" src="'+e.avatar+'" alt="'+e.login+'" width="36" height="36" loading="lazy"><div><div class="lb-username">'+e.name+'</div><div class="lb-handle">@'+e.login+'</div></div></div>';
-    html+='<div class="lb-stars">⭐ '+e.stars.toLocaleString()+'</div>';
-    html+='<div class="lb-repos">📦 '+e.repos+'</div>';
-    html+='<div class="lb-score-cell"><div class="lb-score-val">'+e.score+'/100</div><div class="lb-score-bar-track"><div class="lb-score-bar-fill" style="width:'+e.score+'%"></div></div></div>';
-    html+='</div>';
-  }
-  body.innerHTML=html;
-  body.querySelectorAll(".lb-row").forEach(function(row){
-    row.addEventListener("click",function(){
-      document.getElementById("input1").value=row.getAttribute("data-login");
-      setMode("single");
-      doSearch();
-    });
-  });
+  const medals=["🥇","🥈","🥉"];
+  body.innerHTML=leaderboard.map((e,i)=>`<div class="lb-row ${i<3?"top-"+(i+1):""}" onclick="document.getElementById('input1').value='${e.login}';setMode('single');doSearch()"><div class="lb-rank">${medals[i]||(i+1)}</div><div class="lb-user"><img class="lb-avatar" src="${e.avatar}" alt="${e.login}" width="36" height="36" loading="lazy"><div><div class="lb-username">${e.name}</div><div class="lb-handle">@${e.login}</div></div></div><div class="lb-stars">⭐ ${e.stars.toLocaleString()}</div><div class="lb-repos">📦 ${e.repos}</div><div class="lb-score-cell"><div class="lb-score-val">${e.score}/100</div><div class="lb-score-bar-track"><div class="lb-score-bar-fill" style="width:${e.score}%"></div></div></div></div>`).join("");
 }
 function clearLeaderboard(){if(confirm("Clear all leaderboard entries?")){leaderboard=[];renderLeaderboard();}}
 
 // ===== SHAREABLE URL =====
 function updateShareUrl(username){
-  var url=window.location.href.split("?")[0]+"?user="+encodeURIComponent(username);
-  var el=document.getElementById("shareUrlText");
+  const url=window.location.href.split("?")[0]+"?user="+encodeURIComponent(username);
+  const el=document.getElementById("shareUrlText");
   if(el)el.textContent=url;
 }
 function copyShareUrl(){
-  var url=document.getElementById("shareUrlText").textContent;
-  var btn=document.getElementById("copyBtn");
-
-  // Safe clipboard - works in ALL browsers including Edge InPrivate
-  if(navigator.clipboard && window.isSecureContext){
-    navigator.clipboard.writeText(url).then(function(){
-      btn.textContent="✅ Copied!";btn.classList.add("copied");
-      setTimeout(function(){btn.textContent="📋 Copy";btn.classList.remove("copied");},2000);
-    }).catch(function(){fallbackCopy(url,btn);});
-  } else {
-    fallbackCopy(url,btn);
-  }
+  const url=document.getElementById("shareUrlText").textContent;
+  navigator.clipboard.writeText(url).then(()=>{
+    const btn=document.getElementById("copyBtn");
+    btn.textContent="✅ Copied!";btn.classList.add("copied");
+    setTimeout(()=>{btn.textContent="📋 Copy";btn.classList.remove("copied");},2000);
+  });
 }
-
-function fallbackCopy(text, btn){
-  // Works in Edge InPrivate, IE, old browsers — no clipboard API needed
-  var ta=document.createElement("textarea");
-  ta.value=text;
-  ta.style.position="fixed";
-  ta.style.left="-9999px";
-  ta.style.top="-9999px";
-  document.body.appendChild(ta);
-  ta.focus();
-  ta.select();
-  try{
-    document.execCommand("copy");
-    if(btn){btn.textContent="✅ Copied!";btn.classList.add("copied");setTimeout(function(){btn.textContent="📋 Copy";btn.classList.remove("copied");},2000);}
-  }catch(e){
-    if(btn){btn.textContent="❌ Failed";}
-  }
-  document.body.removeChild(ta);
-}
+window.addEventListener("DOMContentLoaded",()=>{
+  const u=new URLSearchParams(window.location.search).get("user");
+  if(u){document.getElementById("input1").value=u;setTimeout(doSearch,500);}
+  renderLeaderboard();
+});
 
 // ===== DEVELOPER CARD =====
 function renderDevCard(user,repos,dna){
-  var processed=processRepos(repos);
-  var sortedLangs=processed.sortedLangs;
-  var totalStars=repos.reduce(function(s,r){return s+r.stargazers_count;},0);
+  const{sortedLangs}=processRepos(repos);
+  const totalStars=repos.reduce((s,r)=>s+r.stargazers_count,0);
   document.getElementById("cardAvatar").src=user.avatar_url;
   document.getElementById("cardName").textContent=user.name||user.login;
   document.getElementById("cardLogin").textContent="@"+user.login;
   document.getElementById("cardRank").innerHTML=rankBadgeHTML(dna.overall);
   document.getElementById("cardDnaScore").textContent=dna.overall+"/100";
-  var statsHTML="";
-  var statsData=[{label:"Repos",val:user.public_repos},{label:"Stars",val:totalStars},{label:"Followers",val:user.followers}];
-  for(var i=0;i<statsData.length;i++){
-    statsHTML+='<div class="devcard-stat"><div class="devcard-stat-val">'+statsData[i].val.toLocaleString()+'</div><div class="devcard-stat-label">'+statsData[i].label+'</div></div>';
-  }
-  document.getElementById("cardStats").innerHTML=statsHTML;
-  var langsHTML="";
-  var topLangs=sortedLangs.slice(0,4);
-  for(var j=0;j<topLangs.length;j++){
-    langsHTML+='<span class="devcard-lang-chip"><span style="width:8px;height:8px;border-radius:50%;background:'+langColor(topLangs[j][0])+';display:inline-block"></span>'+topLangs[j][0]+'</span>';
-  }
-  document.getElementById("cardLangs").innerHTML=langsHTML;
-  var shareUrl=window.location.href.split("?")[0]+"?user="+encodeURIComponent(user.login);
-  var shareText=encodeURIComponent("🔭 Check out "+(user.name||user.login)+"'s Developer DNA on DevScope! Score: "+dna.overall+"/100 — "+getRank(dna.overall).label);
-  document.getElementById("shareBtns").innerHTML=
-    '<a class="share-social-btn" href="https://twitter.com/intent/tweet?text='+shareText+'&url='+encodeURIComponent(shareUrl)+'" target="_blank" rel="noopener"><span style="font-size:1.2rem">🐦</span> Share on Twitter/X</a>'+
-    '<a class="share-social-btn" href="https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(shareUrl)+'" target="_blank" rel="noopener"><span style="font-size:1.2rem">💼</span> Share on LinkedIn</a>'+
-    '<a class="share-social-btn" href="https://api.whatsapp.com/send?text='+shareText+'%20'+encodeURIComponent(shareUrl)+'" target="_blank" rel="noopener"><span style="font-size:1.2rem">💬</span> Share on WhatsApp</a>'+
-    '<button class="share-social-btn" onclick="copyShareUrl()"><span style="font-size:1.2rem">🔗</span> Copy Profile Link</button>';
+  document.getElementById("cardStats").innerHTML=[
+    {label:"Repos",val:user.public_repos},{label:"Stars",val:totalStars},{label:"Followers",val:user.followers}
+  ].map(s=>`<div class="devcard-stat"><div class="devcard-stat-val">${s.val.toLocaleString()}</div><div class="devcard-stat-label">${s.label}</div></div>`).join("");
+  document.getElementById("cardLangs").innerHTML=sortedLangs.slice(0,4).map(([l])=>`<span class="devcard-lang-chip"><span style="width:8px;height:8px;border-radius:50%;background:${langColor(l)};display:inline-block"></span>${l}</span>`).join("");
+  const shareUrl=window.location.href.split("?")[0]+"?user="+encodeURIComponent(user.login);
+  const shareText=encodeURIComponent(`🔭 Check out ${user.name||user.login}'s Developer DNA on GitDNA! Score: ${dna.overall}/100 — ${getRank(dna.overall).label}`);
+  document.getElementById("shareBtns").innerHTML=`
+    <a class="share-social-btn" href="https://twitter.com/intent/tweet?text=${shareText}&url=${encodeURIComponent(shareUrl)}" target="_blank" rel="noopener"><span style="font-size:1.2rem">🐦</span> Share on Twitter/X</a>
+    <a class="share-social-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}" target="_blank" rel="noopener"><span style="font-size:1.2rem">💼</span> Share on LinkedIn</a>
+    <a class="share-social-btn" href="https://api.whatsapp.com/send?text=${shareText}%20${encodeURIComponent(shareUrl)}" target="_blank" rel="noopener"><span style="font-size:1.2rem">💬</span> Share on WhatsApp</a>
+    <button class="share-social-btn" onclick="copyShareUrl()"><span style="font-size:1.2rem">🔗</span> Copy Profile Link</button>`;
 }
 function downloadCard(){
   if(typeof html2canvas!=="undefined"){
-    html2canvas(document.getElementById("devCard"),{scale:2,backgroundColor:null,useCORS:true}).then(function(canvas){
-      var a=document.createElement("a");a.download="devscope-card.png";a.href=canvas.toDataURL("image/png");a.click();
+    html2canvas(document.getElementById("devCard"),{scale:2,backgroundColor:null,useCORS:true}).then(canvas=>{
+      const a=document.createElement("a");a.download="gitdna-card.png";a.href=canvas.toDataURL("image/png");a.click();
     });
   }else{alert("Tip: Right-click the card and save as image, or take a screenshot!");}
 }
 
 // ===== THEME TOGGLE =====
 (function(){
-  var t=document.querySelector("[data-theme-toggle]");
-  var r=document.documentElement;
-  var d="dark";
-  if(t){
-    t.addEventListener("click",function(){
-      d=d==="dark"?"light":"dark";
-      r.setAttribute("data-theme",d);
-      t.innerHTML=d==="dark"
-        ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
-        :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
-    });
-  }
+  const t=document.querySelector("[data-theme-toggle]");
+  const r=document.documentElement;
+  let d="dark";
+  t&&t.addEventListener("click",()=>{
+    d=d==="dark"?"light":"dark";
+    r.setAttribute("data-theme",d);
+    t.innerHTML=d==="dark"
+      ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+      :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  });
 })();
 
 // ===== MODE =====
-var currentMode="single";
+let currentMode="single";
 function setMode(m){
   currentMode=m;
-  document.querySelectorAll(".mode-btn").forEach(function(b){b.classList.toggle("active",b.getAttribute("data-mode")===m);});
-  var sep=document.getElementById("sep");
-  var inp2=document.getElementById("input2");
+  document.querySelectorAll(".mode-btn").forEach(b=>b.classList.toggle("active",b.dataset.mode===m));
+  const sep=document.getElementById("sep");
+  const inp2=document.getElementById("input2");
   if(m==="compare"){sep.classList.add("visible");inp2.style.display="block";}
   else{sep.classList.remove("visible");inp2.style.display="none";}
 }
-document.getElementById("input1").addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
-document.getElementById("input2").addEventListener("keydown",function(e){if(e.key==="Enter")doSearch();});
+document.getElementById("input1").addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
+document.getElementById("input2").addEventListener("keydown",e=>{if(e.key==="Enter")doSearch();});
 
 // ===== CHART INSTANCES =====
-var langChartInst,activityChartInst,starsChartInst,cmpLang1,cmpLang2;
+let langChartInst,activityChartInst,starsChartInst,cmpLang1,cmpLang2;
 function destroyChart(inst){if(inst){try{inst.destroy();}catch(e){}}}
 
 // ===== GITHUB API =====
 async function fetchUser(u){
-  var r=await fetch("https://api.github.com/users/"+encodeURIComponent(u));
-  if(!r.ok)throw new Error(r.status===404?'User "'+u+'" not found':"GitHub API rate limit exceeded — try again in a minute");
+  const r=await fetch(`https://api.github.com/users/${encodeURIComponent(u)}`);
+  if(!r.ok)throw new Error(r.status===404?`User "${u}" not found`:"GitHub API rate limit exceeded — try again in a minute");
   return r.json();
 }
 async function fetchRepos(u){
-  var r=await fetch("https://api.github.com/users/"+encodeURIComponent(u)+"/repos?per_page=100&sort=updated");
+  const r=await fetch(`https://api.github.com/users/${encodeURIComponent(u)}/repos?per_page=100&sort=updated`);
   if(!r.ok)return[];
   return r.json();
 }
 
 // ===== LANGUAGE COLORS =====
-var LANG_COLORS={JavaScript:"#f1e05a",Python:"#3572A5",TypeScript:"#2b7489",HTML:"#e34c26",CSS:"#563d7c",Java:"#b07219",C:"#555555","C#":"#178600","C++":"#f34b7d",Go:"#00ADD8",Rust:"#dea584",PHP:"#4F5D95",Shell:"#89e051",PowerShell:"#012456",Ruby:"#701516",Swift:"#ffac45",Kotlin:"#F18E33",Dart:"#00B4AB",R:"#198CE7",Scala:"#c22d40",Vue:"#41b883",default:"#7c6bff"};
+const LANG_COLORS={JavaScript:"#f1e05a",Python:"#3572A5",TypeScript:"#2b7489",HTML:"#e34c26",CSS:"#563d7c",Java:"#b07219",C:"#555555","C#":"#178600","C++":"#f34b7d",Go:"#00ADD8",Rust:"#dea584",PHP:"#4F5D95",Shell:"#89e051",PowerShell:"#012456",Ruby:"#701516",Swift:"#ffac45",Kotlin:"#F18E33",Dart:"#00B4AB",R:"#198CE7",Scala:"#c22d40",Vue:"#41b883",default:"#7c6bff"};
 function langColor(l){return LANG_COLORS[l]||LANG_COLORS.default;}
 
 // ===== PROCESS REPOS =====
 function processRepos(repos){
-  var langCount={};
-  var topByStars=repos.slice().sort(function(a,b){return b.stargazers_count-a.stargazers_count;}).slice(0,12);
-  repos.forEach(function(r){if(r.language)langCount[r.language]=(langCount[r.language]||0)+1;});
-  var sortedLangs=Object.entries(langCount).sort(function(a,b){return b[1]-a[1];}).slice(0,8);
-  var recentYears={};
-  repos.forEach(function(r){var y=new Date(r.created_at).getFullYear();recentYears[y]=(recentYears[y]||0)+1;});
-  return{langCount:langCount,sortedLangs:sortedLangs,topByStars:topByStars,recentYears:recentYears};
+  const langCount={};
+  const topByStars=[...repos].sort((a,b)=>b.stargazers_count-a.stargazers_count).slice(0,12);
+  repos.forEach(r=>{if(r.language)langCount[r.language]=(langCount[r.language]||0)+1;});
+  const sortedLangs=Object.entries(langCount).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const recentYears={};
+  repos.forEach(r=>{const y=new Date(r.created_at).getFullYear();recentYears[y]=(recentYears[y]||0)+1;});
+  return{langCount,sortedLangs,topByStars,recentYears};
 }
 
 // ===== DNA SCORE =====
 function calcDNA(user,repos){
-  var totalStars=repos.reduce(function(s,r){return s+r.stargazers_count;},0);
-  var totalForks=repos.reduce(function(s,r){return s+r.forks_count;},0);
-  var langs=new Set(repos.map(function(r){return r.language;}).filter(Boolean)).size;
-  var hasProfile=user.bio?1:0;
-  var activity=Math.min(100,(user.public_repos/50)*100);
-  var influence=Math.min(100,(totalStars/500)*100);
-  var collaboration=Math.min(100,(user.followers/200)*100);
-  var diversity=Math.min(100,(langs/8)*100);
-  var consistency=Math.min(100,((user.following/Math.max(1,user.followers))*30)+40);
-  var openness=Math.min(100,(totalForks/Math.max(1,totalStars))*100+hasProfile*20);
-  var overall=Math.round((activity+influence+collaboration+diversity+consistency+openness)/6);
-  return{overall:overall,metrics:[
+  const totalStars=repos.reduce((s,r)=>s+r.stargazers_count,0);
+  const totalForks=repos.reduce((s,r)=>s+r.forks_count,0);
+  const langs=new Set(repos.map(r=>r.language).filter(Boolean)).size;
+  const hasProfile=user.bio?1:0;
+  const activity=Math.min(100,(user.public_repos/50)*100);
+  const influence=Math.min(100,(totalStars/500)*100);
+  const collaboration=Math.min(100,(user.followers/200)*100);
+  const diversity=Math.min(100,(langs/8)*100);
+  const consistency=Math.min(100,((user.following/Math.max(1,user.followers))*30)+40);
+  const openness=Math.min(100,(totalForks/Math.max(1,totalStars))*100+hasProfile*20);
+  const overall=Math.round((activity+influence+collaboration+diversity+consistency+openness)/6);
+  return{overall,metrics:[
     {label:"Repo Activity",val:Math.round(activity)},
     {label:"Influence (Stars)",val:Math.round(influence)},
     {label:"Collaboration",val:Math.round(collaboration)},
@@ -590,38 +539,34 @@ function calcDNA(user,repos){
 
 // ===== CHARTS =====
 function getChartDefaults(){
-  var dark=document.documentElement.getAttribute("data-theme")!=="light";
+  const dark=document.documentElement.getAttribute("data-theme")!=="light";
   return{color:dark?"rgba(255,255,255,0.6)":"rgba(0,0,0,0.6)",gridColor:dark?"rgba(255,255,255,0.06)":"rgba(0,0,0,0.06)"};
 }
 function renderLangChart(id,sortedLangs){
-  var ctx=document.getElementById(id).getContext("2d");
-  var cd=getChartDefaults();
-  return new Chart(ctx,{type:"doughnut",data:{labels:sortedLangs.map(function(l){return l[0];}),datasets:[{data:sortedLangs.map(function(l){return l[1];}),backgroundColor:sortedLangs.map(function(l){return langColor(l[0]);}),borderWidth:2,borderColor:"transparent"}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"right",labels:{color:cd.color,font:{family:"Space Grotesk",size:11},boxWidth:12,padding:8}}},cutout:"65%"}});
+  const ctx=document.getElementById(id).getContext("2d");
+  const{color}=getChartDefaults();
+  return new Chart(ctx,{type:"doughnut",data:{labels:sortedLangs.map(([l])=>l),datasets:[{data:sortedLangs.map(([,v])=>v),backgroundColor:sortedLangs.map(([l])=>langColor(l)),borderWidth:2,borderColor:"transparent"}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"right",labels:{color,font:{family:"Space Grotesk",size:11},boxWidth:12,padding:8}}},cutout:"65%"}});
 }
 function renderActivityChart(recentYears){
-  var ctx=document.getElementById("activityChart").getContext("2d");
-  var cd=getChartDefaults();
-  var years=Object.keys(recentYears).sort();
-  return new Chart(ctx,{type:"bar",data:{labels:years,datasets:[{label:"Repos Created",data:years.map(function(y){return recentYears[y];}),backgroundColor:"rgba(124,107,255,0.7)",borderRadius:6,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:cd.gridColor},ticks:{color:cd.color}},y:{grid:{color:cd.gridColor},ticks:{color:cd.color,precision:0}}}}});
+  const ctx=document.getElementById("activityChart").getContext("2d");
+  const{color,gridColor}=getChartDefaults();
+  const years=Object.keys(recentYears).sort();
+  return new Chart(ctx,{type:"bar",data:{labels:years,datasets:[{label:"Repos Created",data:years.map(y=>recentYears[y]),backgroundColor:"rgba(124,107,255,0.7)",borderRadius:6,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:gridColor},ticks:{color}},y:{grid:{color:gridColor},ticks:{color,precision:0}}}}});
 }
 function renderStarsChart(topByStars){
-  var ctx=document.getElementById("starsChart").getContext("2d");
-  var cd=getChartDefaults();
-  var top=topByStars.slice(0,10);
-  return new Chart(ctx,{type:"bar",data:{labels:top.map(function(r){return r.name;}),datasets:[{label:"Stars",data:top.map(function(r){return r.stargazers_count;}),backgroundColor:top.map(function(_,i){return "hsla("+(260+i*12)+",70%,65%,0.8)";}),borderRadius:6,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{grid:{color:cd.gridColor},ticks:{color:cd.color}},y:{grid:{color:cd.gridColor},ticks:{color:cd.color,font:{size:11}}}}}});
+  const ctx=document.getElementById("starsChart").getContext("2d");
+  const{color,gridColor}=getChartDefaults();
+  const top=topByStars.slice(0,10);
+  return new Chart(ctx,{type:"bar",data:{labels:top.map(r=>r.name),datasets:[{label:"Stars",data:top.map(r=>r.stargazers_count),backgroundColor:top.map((_,i)=>`hsla(${260+i*12},70%,65%,0.8)`),borderRadius:6,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{grid:{color:gridColor},ticks:{color}},y:{grid:{color:gridColor},ticks:{color,font:{size:11}}}}}});
 }
 
 // ===== RENDER PROFILE =====
 function renderProfile(user,repos){
-  var processed=processRepos(repos);
-  var langCount=processed.langCount;
-  var sortedLangs=processed.sortedLangs;
-  var topByStars=processed.topByStars;
-  var recentYears=processed.recentYears;
-  var totalStars=repos.reduce(function(s,r){return s+r.stargazers_count;},0);
+  const{langCount,sortedLangs,topByStars,recentYears}=processRepos(repos);
+  const totalStars=repos.reduce((s,r)=>s+r.stargazers_count,0);
 
-  // DNA — declared first before any use
-  var dna=calcDNA(user,repos);
+  // *** DNA MUST BE DECLARED FIRST — before any dna.xxx usage ***
+  const dna=calcDNA(user,repos);
 
   // Avatar & basic info
   document.getElementById("avatar").src=user.avatar_url;
@@ -629,41 +574,32 @@ function renderProfile(user,repos){
   document.getElementById("profileName").textContent=user.name||user.login;
   document.getElementById("profileLogin").textContent="@"+user.login;
   document.getElementById("profileBio").textContent=user.bio||"No bio provided";
-  var meta=[];
-  if(user.company)meta.push('<span class="profile-meta-item">🏢 '+user.company+'</span>');
-  if(user.location)meta.push('<span class="profile-meta-item">📍 '+user.location+'</span>');
-  if(user.blog)meta.push('<span class="profile-meta-item">🔗 <a href="'+user.blog+'" target="_blank" rel="noopener" style="color:var(--color-primary)">Website</a></span>');
-  meta.push('<span class="profile-meta-item">📅 Joined '+new Date(user.created_at).getFullYear()+'</span>');
+  const meta=[];
+  if(user.company)meta.push(`<span class="profile-meta-item">🏢 ${user.company}</span>`);
+  if(user.location)meta.push(`<span class="profile-meta-item">📍 ${user.location}</span>`);
+  if(user.blog)meta.push(`<span class="profile-meta-item">🔗 <a href="${user.blog}" target="_blank" rel="noopener" style="color:var(--color-primary)">Website</a></span>`);
+  meta.push(`<span class="profile-meta-item">📅 Joined ${new Date(user.created_at).getFullYear()}</span>`);
   document.getElementById("profileMeta").innerHTML=meta.join("");
 
   // Rank badge
   document.getElementById("rankBadgeWrap").innerHTML=rankBadgeHTML(dna.overall);
 
   // Stats
-  var sg=document.getElementById("statsGrid");
-  var stats=[
+  const sg=document.getElementById("statsGrid");
+  const stats=[
     {icon:"📦",label:"Public Repos",val:user.public_repos},
     {icon:"⭐",label:"Total Stars",val:totalStars},
     {icon:"👥",label:"Followers",val:user.followers},
     {icon:"🔀",label:"Following",val:user.following},
     {icon:"🌍",label:"Languages Used",val:Object.keys(langCount).length},
-    {icon:"🍴",label:"Total Forks",val:repos.reduce(function(s,r){return s+r.forks_count;},0)},
+    {icon:"🍴",label:"Total Forks",val:repos.reduce((s,r)=>s+r.forks_count,0)},
   ];
-  var sgHTML="";
-  for(var i=0;i<stats.length;i++){
-    sgHTML+='<div class="stat-card"><div class="stat-icon">'+stats[i].icon+'</div><div class="stat-label">'+stats[i].label+'</div><div class="stat-value">'+stats[i].val.toLocaleString()+'</div></div>';
-  }
-  sg.innerHTML=sgHTML;
+  sg.innerHTML=stats.map(s=>`<div class="stat-card"><div class="stat-icon">${s.icon}</div><div class="stat-label">${s.label}</div><div class="stat-value">${s.val.toLocaleString()}</div></div>`).join("");
 
   // DNA section
   document.getElementById("dnaScore").textContent=dna.overall+"/100";
-  var barsHTML="";
-  for(var j=0;j<dna.metrics.length;j++){
-    var m=dna.metrics[j];
-    barsHTML+='<div class="dna-bar-row"><div class="dna-bar-label">'+m.label+'</div><div class="dna-bar-track"><div class="dna-bar-fill" style="width:0%" data-width="'+m.val+'%"></div></div><div class="dna-bar-val">'+m.val+'</div></div>';
-  }
-  document.getElementById("dnaBars").innerHTML=barsHTML;
-  setTimeout(function(){document.querySelectorAll(".dna-bar-fill").forEach(function(b){b.style.width=b.getAttribute("data-width");});},100);
+  document.getElementById("dnaBars").innerHTML=dna.metrics.map(m=>`<div class="dna-bar-row"><div class="dna-bar-label">${m.label}</div><div class="dna-bar-track"><div class="dna-bar-fill" style="width:0%" data-width="${m.val}%"></div></div><div class="dna-bar-val">${m.val}</div></div>`).join("");
+  setTimeout(()=>{document.querySelectorAll(".dna-bar-fill").forEach(b=>b.style.width=b.dataset.width);},100);
 
   // Charts
   destroyChart(langChartInst);destroyChart(activityChartInst);destroyChart(starsChartInst);
@@ -681,60 +617,38 @@ function renderProfile(user,repos){
   addToLeaderboard(user,repos,dna.overall);
 
   // Repos
-  var rg=document.getElementById("reposGrid");
-  var rgHTML="";
-  var topSlice=topByStars.slice(0,9);
-  for(var k=0;k<topSlice.length;k++){
-    var r=topSlice[k];
-    var langDot=r.language?'<span><span style="width:8px;height:8px;border-radius:50%;background:'+langColor(r.language)+';display:inline-block"></span> '+r.language+'</span>':"";
-    rgHTML+='<a class="repo-card" href="'+r.html_url+'" target="_blank" rel="noopener"><div class="repo-name">📁 '+r.name+'</div><div class="repo-desc">'+(r.description||"No description")+'</div><div class="repo-meta">'+langDot+'<span>⭐ '+r.stargazers_count+'</span><span>🍴 '+r.forks_count+'</span></div></a>';
-  }
-  rg.innerHTML=rgHTML;
+  const rg=document.getElementById("reposGrid");
+  rg.innerHTML=topByStars.slice(0,9).map(r=>`<a class="repo-card" href="${r.html_url}" target="_blank" rel="noopener"><div class="repo-name"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>${r.name}</div><div class="repo-desc">${r.description||"No description"}</div><div class="repo-meta">${r.language?`<span><span style="width:8px;height:8px;border-radius:50%;background:${langColor(r.language)};display:inline-block"></span> ${r.language}</span>`:""}<span>⭐ ${r.stargazers_count}</span><span>🍴 ${r.forks_count}</span></div></a>`).join("");
 }
 
 // ===== RENDER COMPARE =====
 function renderCompare(u1,r1,u2,r2){
-  var stars1=r1.reduce(function(s,r){return s+r.stargazers_count;},0);
-  var stars2=r2.reduce(function(s,r){return s+r.stargazers_count;},0);
-  var dna1=calcDNA(u1,r1).overall;
-  var dna2=calcDNA(u2,r2).overall;
-  var metrics=[
+  const stars1=r1.reduce((s,r)=>s+r.stargazers_count,0);
+  const stars2=r2.reduce((s,r)=>s+r.stargazers_count,0);
+  const metrics=[
     {label:"Public Repos",v1:u1.public_repos,v2:u2.public_repos},
     {label:"Total Stars",v1:stars1,v2:stars2},
     {label:"Followers",v1:u1.followers,v2:u2.followers},
     {label:"Following",v1:u1.following,v2:u2.following},
-    {label:"DNA Score",v1:dna1,v2:dna2},
+    {label:"DNA Score",v1:calcDNA(u1,r1).overall,v2:calcDNA(u2,r2).overall},
   ];
   function card(u,repos,side){
-    var html='<div class="compare-card">';
-    html+='<img class="compare-avatar" src="'+u.avatar_url+'" alt="'+u.login+'" width="72" height="72">';
-    html+='<div class="compare-name">'+(u.name||u.login)+'</div>';
-    html+='<div class="compare-login">@'+u.login+'</div>';
-    html+='<div class="compare-stats">';
-    for(var i=0;i<metrics.length;i++){
-      var myVal=side===1?metrics[i].v1:metrics[i].v2;
-      var theirVal=side===1?metrics[i].v2:metrics[i].v1;
-      var cls=myVal>theirVal?"winner":myVal<theirVal?"loser":"";
-      var arrow=myVal>theirVal?"▲":myVal<theirVal?"▼":"—";
-      html+='<div class="compare-stat-row"><span class="compare-stat-label">'+metrics[i].label+'</span><span class="compare-stat-val '+cls+'">'+myVal.toLocaleString()+' '+arrow+'</span></div>';
-    }
-    html+='</div></div>';
-    return html;
+    return`<div class="compare-card"><img class="compare-avatar" src="${u.avatar_url}" alt="${u.login}" width="72" height="72"><div class="compare-name">${u.name||u.login}</div><div class="compare-login">@${u.login}</div><div class="compare-stats">${metrics.map(m=>{const myVal=side===1?m.v1:m.v2;const theirVal=side===1?m.v2:m.v1;const cls=myVal>theirVal?"winner":myVal<theirVal?"loser":"";return`<div class="compare-stat-row"><span class="compare-stat-label">${m.label}</span><span class="compare-stat-val ${cls}">${myVal.toLocaleString()} ${myVal>theirVal?"▲":myVal<theirVal?"▼":"—"}</span></div>`;}).join("")}</div></div>`;
   }
-  document.getElementById("compareGrid").innerHTML=card(u1,r1,1)+'<div class="vs-badge">VS</div>'+card(u2,r2,2);
+  document.getElementById("compareGrid").innerHTML=card(u1,r1,1)+"<div class="vs-badge">VS</div>"+card(u2,r2,2);
   destroyChart(cmpLang1);destroyChart(cmpLang2);
-  var sl1=processRepos(r1).sortedLangs;
-  var sl2=processRepos(r2).sortedLangs;
+  const sl1=processRepos(r1).sortedLangs;
+  const sl2=processRepos(r2).sortedLangs;
   if(sl1.length)cmpLang1=renderLangChart("compareLangChart1",sl1);
   if(sl2.length)cmpLang2=renderLangChart("compareLangChart2",sl2);
 }
 
 // ===== MAIN SEARCH =====
 async function doSearch(){
-  var u1=document.getElementById("input1").value.trim();
-  var u2=document.getElementById("input2").value.trim();
+  const u1=document.getElementById("input1").value.trim();
+  const u2=document.getElementById("input2").value.trim();
   if(!u1){document.getElementById("input1").focus();return;}
-  var btn=document.getElementById("searchBtn");
+  const btn=document.getElementById("searchBtn");
   btn.disabled=true;btn.textContent="Analyzing...";
   document.getElementById("results").classList.remove("visible");
   document.getElementById("compareResults").classList.remove("visible");
@@ -742,19 +656,18 @@ async function doSearch(){
   document.getElementById("loading").classList.add("visible");
   try{
     if(currentMode==="compare"&&u2){
-      document.getElementById("loadingText").textContent="Comparing "+u1+" vs "+u2+"...";
-      var users=await Promise.all([fetchUser(u1),fetchUser(u2)]);
-      var allRepos=await Promise.all([fetchRepos(u1),fetchRepos(u2)]);
+      document.getElementById("loadingText").textContent=`Comparing ${u1} vs ${u2}...`;
+      const[user1,user2]=await Promise.all([fetchUser(u1),fetchUser(u2)]);
+      const[repos1,repos2]=await Promise.all([fetchRepos(u1),fetchRepos(u2)]);
       document.getElementById("loading").classList.remove("visible");
       document.getElementById("compareResults").classList.add("visible");
-      renderCompare(users[0],allRepos[0],users[1],allRepos[1]);
+      renderCompare(user1,repos1,user2,repos2);
     }else{
-      document.getElementById("loadingText").textContent="Fetching "+u1+" developer data...";
-      var userData=await fetchUser(u1);
-      var reposData=await fetchRepos(u1);
+      document.getElementById("loadingText").textContent=`Fetching ${u1}'s developer data...`;
+      const[user,repos]=await Promise.all([fetchUser(u1),fetchRepos(u1)]);
       document.getElementById("loading").classList.remove("visible");
       document.getElementById("results").classList.add("visible");
-      renderProfile(userData,reposData);
+      renderProfile(user,repos);
     }
   }catch(err){
     document.getElementById("loading").classList.remove("visible");
@@ -764,12 +677,6 @@ async function doSearch(){
     btn.disabled=false;btn.textContent="Analyze →";
   }
 }
-
-window.addEventListener("DOMContentLoaded",function(){
-  var u=new URLSearchParams(window.location.search).get("user");
-  if(u){document.getElementById("input1").value=u;setTimeout(doSearch,500);}
-  renderLeaderboard();
-});
 </script>
 </body>
 </html>

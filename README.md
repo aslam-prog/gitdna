@@ -1,4 +1,4 @@
-# 🔭 DevScope — GitHub Profile Visualizer
+# 🧬 GitDNA — GitHub Profile Visualizer
 
 <p align="center">
   <img src="https://img.shields.io/badge/Made%20with-HTML%20%7C%20CSS%20%7C%20JS-7c6bff?style=for-the-badge" />
@@ -19,7 +19,7 @@
 | 🎖️ **Rank & Badge System** | Auto-assigned rank from 🌱 Seedling to 🏆 Legend based on DNA Score |
 | 🃏 **Developer Card** | Downloadable identity card — share on Twitter, LinkedIn & WhatsApp |
 | 🌍 **Global Leaderboard** | All searched developers ranked live by DNA Score |
-| 🔗 **Shareable Profile URL** | One-click link to share any developer's DevScope report |
+| 🔗 **Shareable Profile URL** | One-click link to share any developer's GitDNA report |
 | 📊 **Language Breakdown** | Beautiful doughnut chart of all programming languages used |
 | 📈 **Repo Activity** | Bar chart of repositories created per year |
 | ⭐ **Stars Distribution** | Horizontal bar chart of most-starred repos |
@@ -32,7 +32,7 @@
 
 ## 🚀 Live Demo
 
-🌐 **[https://aslam-prog.github.io/devscope/devscope.html](https://aslam-prog.github.io/devscope/devscope.html)**
+🌐 **[https://aslam-prog.github.io/gitdna/gitdna.html](https://aslam-prog.github.io/gitdna/gitdna.html)**
 
 > Open in any browser — **no server needed!**
 
@@ -68,11 +68,11 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/aslam-prog/devscope.git
-cd devscope
+git clone https://github.com/aslam-prog/gitdna.git
+cd gitdna
 
 # Just open the file!
-open devscope.html
+open gitdna.html
 ```
 
 That's it. No `npm install`. No backend. No API keys.
@@ -112,12 +112,12 @@ The Developer DNA Score (0–100) is calculated from 6 weighted signals:
 Share any developer's report directly using the URL format:
 
 ```
-https://aslam-prog.github.io/devscope/devscope.html?user=USERNAME
+https://aslam-prog.github.io/gitdna/gitdna.html?user=USERNAME
 ```
 
 Example:
 ```
-https://aslam-prog.github.io/devscope/devscope.html?user=torvalds
+https://aslam-prog.github.io/gitdna/gitdna.html?user=torvalds
 ```
 
 ---
