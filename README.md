@@ -16,6 +16,10 @@
 | Feature | Description |
 |---|---|
 | 🧬 **Developer DNA Score** | Unique algorithmic score based on activity, influence, diversity & collaboration |
+| 🎖️ **Rank & Badge System** | Auto-assigned rank from 🌱 Seedling to 🏆 Legend based on DNA Score |
+| 🃏 **Developer Card** | Downloadable identity card — share on Twitter, LinkedIn & WhatsApp |
+| 🌍 **Global Leaderboard** | All searched developers ranked live by DNA Score |
+| 🔗 **Shareable Profile URL** | One-click link to share any developer's DevScope report |
 | 📊 **Language Breakdown** | Beautiful doughnut chart of all programming languages used |
 | 📈 **Repo Activity** | Bar chart of repositories created per year |
 | ⭐ **Stars Distribution** | Horizontal bar chart of most-starred repos |
@@ -28,7 +32,25 @@
 
 ## 🚀 Live Demo
 
-> Open `devscope.html` directly in any browser — **no server needed!**
+🌐 **[https://aslam-prog.github.io/devscope/devscope.html](https://aslam-prog.github.io/devscope/devscope.html)**
+
+> Open in any browser — **no server needed!**
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](screenshots/home.png)
+
+### 🧬 DNA Score & Rank Badge
+![Profile](screenshots/profile.png)
+
+### 🃏 Developer Card
+![Card](screenshots/card.png)
+
+### 🌍 Leaderboard
+![Leaderboard](screenshots/leaderboard.png)
 
 ---
 
@@ -37,6 +59,7 @@
 - **Vanilla HTML/CSS/JavaScript** — zero dependencies, zero build tools
 - **GitHub REST API** — public, no authentication required
 - **Chart.js** — beautiful, animated charts via CDN
+- **html2canvas** — developer card PNG download
 - **Google Fonts** — Space Grotesk + Space Mono
 
 ---
@@ -71,9 +94,31 @@ The Developer DNA Score (0–100) is calculated from 6 weighted signals:
 
 ---
 
-## 📸 Screenshots
+## 🎖️ Rank System
 
-> Search any GitHub username → instant profile intelligence
+| Score | Rank |
+|---|---|
+| 0–20 | 🌱 Seedling Developer |
+| 21–40 | 🔧 Code Apprentice |
+| 41–60 | ⚡ Active Builder |
+| 61–75 | 🚀 GitHub Warrior |
+| 76–90 | 💎 Open Source Hero |
+| 91–100 | 🏆 Legend Developer |
+
+---
+
+## 🔗 Share a Profile
+
+Share any developer's report directly using the URL format:
+
+```
+https://aslam-prog.github.io/devscope/devscope.html?user=USERNAME
+```
+
+Example:
+```
+https://aslam-prog.github.io/devscope/devscope.html?user=torvalds
+```
 
 ---
 
@@ -85,12 +130,18 @@ Pull requests are welcome! Feel free to open issues for:
 - UI improvements
 - Feature requests
 
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ---
 
 ## 📄 License
 
-MIT © [aslam-prog](https://github.com/aslam-prog)
+MIT © [Mohammed Aslam](https://github.com/aslam-prog)
 
 ---
 
-<p align="center">Built with ❤️ by <a href="https://github.com/aslam-prog">aslam-prog</a></p>
+<p align="center">Built with ❤️ by <a href="https://github.com/aslam-prog">Mohammed Aslam</a> · <a href="mailto:uniqueehubs@gmail.com">uniqueehubs@gmail.com</a></p>
